@@ -1,0 +1,7 @@
+ALTER TABLE encuestas MODIFY COLUMN publicado TINYINT(1) DEFAULT 0;
+
+ALTER TABLE encuestas MODIFY COLUMN restriccionEdad INT DEFAULT 0;
+
+ALTER TABLE opciones ADD votos INT DEFAULT 0;
+
+ALTER TABLE encuestas MODIFY COLUMN publicado VARCHAR(3);

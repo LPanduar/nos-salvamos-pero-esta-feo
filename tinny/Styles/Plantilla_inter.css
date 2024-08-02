@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
+    padding: 10px;
+}
+
+.grid-container > * {
+    padding: 10px;
+}
+
+/*  CSS para el Nav (cuadro amarillo superior) */
+.navar {  /* Solo contiene un div (class= nav--links ) */
+    grid-area: navbar;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.nav-links{ /* contiene 4 div (class= nav--item ) */
+    display: flex;
+    justify-content:start;
+    background-color: #fadc7a;
+    width: 100%;
+    max-height: 125%;
+    border-radius: 10px;
+    gap: 10px;
+}
+.nav-item {  /* Cada uno contiene una imagen con un link, a ecepcion del primero */
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+.imagen {
+    width: 24px; 
+    height: 24px; 
+}
+.logo { 
+    width: 93px;
+    height: 75px; 
+    margin-top:15px;
+}
+.nav-item a {
+    text-decoration: none;
+    color: #814672;
+    margin:0  
+}
+/* Aqui termina NAV////////////////////////////////////////////////////////////////////////////////////// */
+
+article{
+    grid-area: main;
+    background-color: #ffffff;
+    
+}
+
+
+.footer {
+    grid-area: footer;
+    background-color: #ffffff;
+}
+
+
+.grid-container {
+    display: grid;
+    gap:10px;
+    grid-template-areas:
+    "navbar"
+    "main"
+    "footer";
+}
+
+@media (min-width: 600px){
+    .grid-container{
+        grid-template-columns: 100%;
+        grid-template-rows: 80px auto 50px;
+        grid-template-areas:
+        "navbar navbar"
+        "main main"
+        "footer footer"; 
+    }
+}

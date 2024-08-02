@@ -1,0 +1,46 @@
+
+.formulario {  
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 8px;
+    gap:20px;
+    box-shadow: 0 0 30px rgba(77, 73, 73, 0.1);
+
+    font-family: "Fira Sans", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    color:#292a2d;
+    
+}
+
+.formulario h2 {
+    margin-bottom: 1em;
+    font-family: "Roboto Slab", serif;
+    font-weight:bold;
+    font-size: 2.5em;
+    font-style: normal;
+    color: #423d3d
+}
+
+.formulario .campo {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr 1fr; 
+    gap: 10px;
+}
+
+.formulario label {
+    display: flex;
+    margin-bottom: 0.5em;
+} 
+
+.campo-respuestas button, .enviar button {
+    width: 150px;
+    height: 30px;
+    gap: 10px;
+    margin: 5px;
+    background-color: #5e3e6d;
+    color: white;
+    border-radius:0.5em;
+}

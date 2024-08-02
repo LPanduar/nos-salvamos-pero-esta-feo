@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 100%;
+}
+body{
+    min-height: 100%;
+    padding: 10px;
+}
+
+.title-font{
+    margin-left: 100px;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    color:rgb(230, 92, 101);
+    text-decoration:none;
+    font-weight: bold;
+    font-family: "Roboto Slab", serif;
+    font-size: 3rem;
+}
+.subtitulo{
+    color:rgba(244, 46, 119, 0.4);
+    text-decoration:none;
+    font-weight: bolder;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 2rem;
+}
+
+.separador{
+    color:rgb(51, 26, 106);
+    text-decoration:none;
+    font-weight: normal;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.contenedor-principal,.contenedor-secundario {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin: 8px;
+    flex: 1 1 260px;
+    gap:20px;      
+}
+
+.item-dibujo{
+        padding-top: 10px; 
+        width: 30%; /* Ajusta el ancho según tus necesidades */
+        height: 10%; /* Ajusta la altura según tus necesidades */
+       /* Centra el gráfico en la página */
+}
+
+canvas {
+    width: 100% !important;
+    height: 100% !important;
+}

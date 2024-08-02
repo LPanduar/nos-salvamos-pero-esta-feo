@@ -1,0 +1,128 @@
+como yo si le puse el navar que tenia esta asi, por si lo ocupas                                                                                                                                                      body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+/*  CSS para el Nav (cuadro amarillo superior) */
+.navar {  /* Solo contiene un div (class= nav--links ) */
+    grid-area: navbar;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.nav-links{ /* contiene 4 div (class= nav--item ) */
+    display: flex;
+    justify-content:start;
+    background-color: #fadc7a;
+    width: 100%;
+    max-height: 125%;
+    border-radius: 10px;
+    gap: 10px;
+}
+.nav-item {  /* Cada uno contiene una imagen con un link, a ecepcion del primero */
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+.imagen {
+    width: 24px;
+    height: 24px;
+}
+.logo {
+    width: 93px;
+    height: 75px;
+    margin-top:15px;
+}
+.nav-item a {
+    text-decoration: none;
+    color: #814672;
+    margin:0
+}
+/* Aqui termina NAV////////////////////////////////////////////////////////////////////////////////////// */
+
+.container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+button:hover {
+    background-color: #575757;
+}
+
+.resultados {
+    margin: 20px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.grafico {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+canvas {
+    width: 100%;
+    height: 400px;
+}
